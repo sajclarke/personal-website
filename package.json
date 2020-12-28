@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "contentful": "^8.1.5",
+    "dayjs": "^1.9.8",
     "next": "10.0.3",
+    "postcss": "^8.2.1",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-markdown": "^5.0.3",
+    "tailwindcss": "^2.0.2"
   }
 }
