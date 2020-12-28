@@ -19,17 +19,25 @@ const PageWrapper = ({ children, currentURL, twitterName, previewImage, siteName
                 <meta name="robots" content="index, follow" />
                 <meta name="keywords" content="barbados, church" />
                 <meta name="author" content="Shannon Clarke" />
-                <meta name="description" content="Shannon Clarke" />
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary" key="twcard" />
-                <meta name="twitter:creator" content="@shannonajclarke" key="twhandle" />
+                <meta name="title" content="Hi, I'm Shannon Clarke. I am passionate about utilizing technology to empower individuals and build communities" />
+                <meta name="description" content="I believe in a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life." />
 
                 {/* Open Graph */}
-                <meta property="og:url" content={currentURL} key="ogurl" />
-                <meta property="og:image" content={previewImage} key="ogimage" />
-                <meta property="og:site_name" content={siteName} key="ogsitename" />
-                <meta property="og:title" content={pageTitle} key="ogtitle" />
-                <meta property="og:description" content={description} key="ogdesc" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://shannonclarke.com/" />
+                <meta property="og:title" content="Hi, I'm Shannon Clarke. I am passionate about utilizing technology to empower individuals and build communities" />
+                <meta property="og:description" content="I believe in a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life." />
+                <meta property="og:image" content="" />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://shannonclarke.com/" />
+                <meta property="twitter:title" content="Hi, I'm Shannon Clarke. I am passionate about utilizing technology to empower individuals and build communities" />
+                <meta property="twitter:description" content="I believe in a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life." />
+                <meta property="twitter:image" content="" />
+                <meta name="twitter:creator" content="@shannonajclarke" key="twhandle" />
+
+
                 {/* General Stuff */}
                 <title>Shannon Clarke</title>
                 <link rel="icon" href="/favicon.ico" />
