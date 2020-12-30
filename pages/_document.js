@@ -12,7 +12,16 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* Tracking Codes */}
                     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21532676-6"></script>
-                    <script src="../../lib/ga.js" async></script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', '[Tracking ID]');
+                            `,
+                        }}
+                    />
                 </Head>
                 <body>
                     <Main />
