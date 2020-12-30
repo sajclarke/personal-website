@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* Tracking Codes */}
                     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21532676-6"></script>
-                    <script src="../lib/ga.js" async></script>
+                    <script src="../../lib/ga.js" async></script>
                 </Head>
                 <body>
                     <Main />
