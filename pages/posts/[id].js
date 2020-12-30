@@ -3,11 +3,17 @@ import dayjs from "dayjs";
 import Markdown from "react-markdown"
 import gfm from "remark-gfm"
 
+import Head from 'next/head'
+
 const Post = ({ post }) => {
     // console.log(post)
     const photoURL = post.heroImage.fields.file?.url.replace('//', 'http://')
     return (
         <div className="mx-auto px-4">
+            <Head>
+                <title>{post.title}</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <main>
                 <section className="max-w-5xl mx-auto">
 

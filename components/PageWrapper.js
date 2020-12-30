@@ -27,14 +27,14 @@ const PageWrapper = ({ children, currentURL, twitterName, previewImage, siteName
                 <meta property="og:url" content="https://shannonclarke.com/" />
                 <meta property="og:title" content="Hi, I'm Shannon Clarke. I am passionate about utilizing technology to empower individuals and build communities" />
                 <meta property="og:description" content="I believe in a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life." />
-                <meta property="og:image" content="" />
+                <meta property="og:image" content="https://shannonclarke.com/assets/images/headshot_4x.png" />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://shannonclarke.com/" />
                 <meta property="twitter:title" content="Hi, I'm Shannon Clarke. I am passionate about utilizing technology to empower individuals and build communities" />
                 <meta property="twitter:description" content="I believe in a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life." />
-                <meta property="twitter:image" content="" />
+                <meta property="twitter:image" content="https://shannonclarke.com/assets/images/headshot_4x.png" />
                 <meta name="twitter:creator" content="@shannonajclarke" key="twhandle" />
 
 
