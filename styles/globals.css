@@ -20,7 +20,7 @@ h3{
 }
 
 table{
-    @apply min-w-full overflow-x-scroll divide-y divide-gray-200
+    @apply w-full overflow-x-scroll divide-y divide-gray-200
 }
 
 thead{
