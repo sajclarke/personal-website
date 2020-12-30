@@ -41,7 +41,6 @@ export default function Home({ posts }) {
 
             <div className="md:p-6 md:w-1/2 flex flex-col items-start">
               <div className="mx-auto"
-              // style={{ height: 500, width: 500 }}
               >
                 <img src="/assets/images/headshot_4x.png" className="object-cover h-64 w-64 md:h-96 md:w-96 rounded-full bg-blue-100" />
               </div>
@@ -60,7 +59,12 @@ export default function Home({ posts }) {
               <RotatingHeading words={words} />
               {/* <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 my-4">I believe in a positive future of humans leveraging technology to live better lives</h2> */}
               <p className="leading-relaxed mb-8">I am a tech entrepreneur and passionate about a future where modern technology solutions are actively developed by the Caribbean to improve our quality of life.</p>
-              <p className="leading-relaxed mb-8">I am currently developing custom business software at <a target="_blank" href="https://www.webstart101.com">Webstart</a> and <a target="_blank" href="https://www.carepoint.co">Carepoint.co</a>, a healthtech startup helping doctors to provide remote care to patients inbetween visits.</p>
+              <p className="leading-relaxed mb-8">I am currently developing custom business software at <a target="_blank" href="https://www.webstart101.com">Webstart</a> and <a className="p-1 hover:bg-indigo-100 text-indigo-500 font-medium rounded" target="_blank" href="https://www.carepoint.co">Carepoint.co</a>, a healthtech startup helping doctors to provide remote care to patients inbetween visits.</p>
+              <div class="flex justify-center items-center space-x-5">
+                <p>Want to chat?</p>
+                <a href="https://calendly.com/shannonclarke-developer/letschat" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-300 rounded text-lg">Book A Meeting</a>
+              </div>
+              <p className="leading-relaxed my-5">You can also connect with me on social networks</p>
               <span className="flex justify-center sm:justify-start">
                 {/* Github icon */}
                 <a target="_blank" href="https://github.com/sajclarke" className="ml-3 text-gray-500 hover:text-white hover:bg-blue-300 rounded-full w-10 h-10 p-2">

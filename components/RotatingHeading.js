@@ -9,7 +9,7 @@ const RotatingHeading = ({ words }) => {
         console.log('start intervals')
         let tempIndex = 0
         const interval = window.setInterval(() => {
-            console.log(tempIndex)
+            // console.log(tempIndex)
 
             if (tempIndex > 4) {
                 console.log('reset')
@@ -20,7 +20,7 @@ const RotatingHeading = ({ words }) => {
                 tempIndex = tempIndex + 1
                 setWordIndex(tempIndex);
             }
-            console.log(tempIndex)
+            // console.log(tempIndex)
 
         }, 750);
         return () => window.clearInterval(interval);

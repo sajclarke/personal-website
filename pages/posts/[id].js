@@ -1,6 +1,7 @@
 import { fetchEntries, fetchEntry } from '@utils/contentfulPosts'
 import dayjs from "dayjs";
 import Markdown from "react-markdown"
+import gfm from "remark-gfm"
 
 const Post = ({ post }) => {
     // console.log(post)
@@ -26,8 +27,8 @@ const Post = ({ post }) => {
                         </div>
 
                         <div className="h-full md:px-10 md:border-l border-gray-100 md:col-span-3 prose max-w-none text-gray-500 my-3 md:my-10 space-y-5">
-                            {photoURL && <img className="h-56 w-56 rounded mx-auto" src={`${photoURL}`} alt={post.title} />}
-                            <Markdown source={post.body} escapeHtml={true} />
+                            {photoURL && <img className="w-full rounded mx-auto" src={`${photoURL}`} alt={post.title} />}
+                            <Markdown plugins={[gfm]} children={post.body} escapeHtml={true} />
                         </div>
                     </div>
 

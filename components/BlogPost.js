@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import Link from "next/link"
 
 function BlogListItem({ postData }) {
   const { date, title, excerpt, hrefLink } = postData;
@@ -13,14 +14,16 @@ function BlogListItem({ postData }) {
       </dl>
       <div className="space-y-5 xl:col-span-3">
         <div className="space-y-6">
-          <h2 className="text-2xl leading-8 font-bold tracking-tight">
-            {title}
-          </h2>
+          <Link href={`/posts/${hrefLink}`}>
+            <h2 className="text-2xl leading-8 font-bold tracking-tight cursor-pointer">
+              {title}
+            </h2>
+          </Link>
         </div>
         <div className="prose max-w-none text-gray-500">
           <p>{excerpt}</p>
         </div>
-        <div className="text-base leading-6 font-medium"><a className="text-teal-500 hover:text-teal-600" aria-label="Read &quot;Tailwind CSS v2.0&quot;" href={`/posts/${hrefLink}`}>Read more →</a></div>
+        <div className="text-base leading-6 font-medium"><Link className="text-teal-500 hover:text-teal-600" href={`/posts/${hrefLink}`}><a aria-label="Read &quot;Tailwind CSS v2.0&quot;" >Read more →</a></Link></div>
       </div>
     </article>
   );

@@ -15,6 +15,42 @@ h2{
     @apply sm:text-3xl text-2xl font-medium text-gray-900 my-4
 }
 
+h3{
+    @apply text-xl font-semibold text-gray-900 my-4
+}
+
+table{
+    @apply min-w-full overflow-x-scroll divide-y divide-gray-200
+}
+
+thead{
+    @apply bg-gray-50
+}
+
+th{
+    @apply px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase
+}
+
+tr{
+    @apply transition-all hover:bg-gray-100 hover:shadow-lg divide-y divide-gray-200
+}
+
+td{
+    @apply px-6 py-4 whitespace-normal 
+}
+
 a{
     @apply p-1 hover:bg-yellow-300 text-yellow-500 font-medium rounded
+}
+
+ol{
+    @apply list-inside list-decimal space-y-3
+}
+
+ul{
+    @apply list-inside list-disc space-y-3
+}
+
+li{
+    @apply ml-5
 }
