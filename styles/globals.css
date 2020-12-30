@@ -16,5 +16,5 @@ h2{
 }
 
 a{
-    @apply p-1 hover:bg-indigo-100 text-indigo-500 font-medium rounded
+    @apply p-1 hover:bg-yellow-300 text-yellow-500 font-medium rounded
 }
