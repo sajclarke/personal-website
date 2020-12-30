@@ -13,7 +13,7 @@ export default function Header({ title }) {
           </Link>
         </div>
         <div className="flex w-full md:w-1/2 justify-end">
-          <ul className="list-reset">
+          <ul className="list-none">
 
             {['About'].map((item, index) => (
               <li key={index} className="mr-1">

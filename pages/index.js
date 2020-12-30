@@ -104,7 +104,7 @@ export default function Home({ posts }) {
             <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">Blog</h1>
             <p className="text-lg leading-7 text-gray-500">A collection of my thoughts along the journey of software development and entrepreneurship</p>
           </div>
-          <ul className="divide-y divide-gray-200">
+          <ul className="list-none divide-y divide-gray-200">
             <li className="py-12">
               {posts?.map((p, index) => (
                 <BlogPost
