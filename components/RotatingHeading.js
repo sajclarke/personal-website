@@ -6,13 +6,13 @@ const RotatingHeading = ({ words }) => {
     // const words = ['small businesses', 'churches', 'doctors', 'lawyers', 'Governments', 'your next big idea']
 
     useEffect(() => {
-        console.log('start intervals')
+        // console.log('start intervals')
         let tempIndex = 0
         const interval = window.setInterval(() => {
             // console.log(tempIndex)
 
             if (tempIndex > 4) {
-                console.log('reset')
+                // console.log('reset')
                 tempIndex = 0
                 setWordIndex(tempIndex)
                 // return
