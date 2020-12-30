@@ -12,7 +12,7 @@ const Post = ({ post }) => {
                 <section className="max-w-5xl mx-auto">
 
                     <div className="pt-6 pb-8 space-y-2 md:space-y-5 text-center border-b border-gray-100">
-                        <p className="text-lg leading-7 text-gray-500">{dayjs(post.date).format("MMMM D, YYYY")}</p>
+                        <p className="text-lg leading-7 text-gray-500">{dayjs(post.publishDate).format("MMMM D, YYYY")}</p>
                         <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">{post.title}</h1>
                     </div>
 
