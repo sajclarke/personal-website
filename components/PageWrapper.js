@@ -43,6 +43,9 @@ const PageWrapper = ({ children, currentURL, twitterName, previewImage, siteName
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+                {/* Tracking Codes */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21532676-6"></script>
+                <script src="../lib/ga.js" async></script>
             </Head>
             <Navbar />
             <main className="flex flex-col flex-1">

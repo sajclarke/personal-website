@@ -6,6 +6,6 @@ Coming soon
 
 ## Roadmap
 - [x] Contentful integration
-- [ ] Calendly Link
+- [x] Calendly Link
 - [ ] Newsletter
 - [ ] Contact Form
