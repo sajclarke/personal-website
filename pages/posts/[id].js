@@ -9,13 +9,13 @@ const Post = ({ post }) => {
     // console.log(post)
     const photoURL = post.heroImage.fields.file?.url.replace('//', 'http://')
     return (
-        <div className="w-full mx-auto px-4">
+        <div className="mx-auto px-4">
             <Head>
                 <title>{post.title}</title>
                 {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
             </Head>
             <main>
-                <section className="w-full mx-auto overflow-hidden">
+                <section className="max-w-5xl mx-auto overflow-hidden">
 
                     <div className="pt-6 pb-8 space-y-2 md:space-y-5 text-center border-b border-gray-100">
                         <p className="text-lg leading-7 text-gray-500">{dayjs(post.publishDate).format("MMMM D, YYYY")}</p>
