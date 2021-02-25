@@ -25,7 +25,7 @@ const Post = ({ post }) => {
                     <div className="flex flex-col md:flex-row">
 
                         <div className="md:w-1/4 flex md:justify-center md:justify-start mt-10 items-center md:items-start space-x-2 space-y-2">
-                            <img src="/assets/images/headshot_4x.png" className="w-16 h-16 bg-blue-100 rounded-full" />
+                            <img src="/assets/images/shannon.jpg" className="w-16 h-16 bg-blue-100 rounded-full" />
                             <div>
                                 <p className="text-gray-500 font-medium">Shannon Clarke</p>
                                 <a href="https://twitter.com/shannonajclarke" target="_blank">@shannonajclarke</a>
