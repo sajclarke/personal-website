@@ -15,15 +15,13 @@ export default function Header({ title }) {
         </div>
         <div className="flex w-full md:w-1/2 justify-end">
           <ul className="list-none">
-            {["About Me"].map((item, index) => (
-              <li key={index} className="mr-1">
-                <Link href={`/${item.toLowerCase()}`}>
-                  <a className="inline-block text-gray-600 hover:bg-indigo-100 hover:text-indigo-500  rounded py-2 px-4">
-                    {item}
-                  </a>
-                </Link>
-              </li>
-            ))}
+            <li className="mr-1">
+              <Link href="/about">
+                <a className="inline-block text-gray-600 hover:bg-indigo-100 hover:text-indigo-500  rounded py-2 px-4">
+                  About Me
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
