@@ -12,11 +12,14 @@
     "contentful": "^8.1.5",
     "dayjs": "^1.9.8",
     "next": "10.0.3",
+    "next-seo": "^4.28.1",
+    "next-themes": "^0.0.15",
     "postcss": "^8.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^4.3.1",
     "react-markdown": "^5.0.3",
     "remark-gfm": "^1.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "2.2.15"
   }
 }
