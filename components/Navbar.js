@@ -1,29 +1,42 @@
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 
 export default function Header({ title }) {
+  const { theme, setTheme } = useTheme();
+  // console.log(theme);
   return (
-    <nav className="bg-white shadow mt-0 sticky z-10 top-0">
-      <div className="max-w-5xl mx-auto flex justify-between items-center py-2">
-        <div className="flex w-full md:w-1/2 justify-center md:justify-start text-white font-semibold">
-          <Link href="/">
-            <div className="flex text-gray-600  cursor-pointer">
-              <span className="text-xl pl-2">
-                <i className="em em-grinning"></i> Shannon Clarke
-              </span>
-            </div>
-          </Link>
-        </div>
-        <div className="flex w-full md:w-1/2 justify-end">
-          <ul className="list-none">
-            <li className="mr-1">
-              <Link href="/about">
-                <a className="inline-block text-gray-600 hover:bg-indigo-100 hover:text-indigo-500  rounded py-2 px-4">
-                  About Me
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <nav className="bg-transparent text-gray-600 dark:text-gray-200">
+      <div className="max-w-5xl mx-5 md:mx-auto flex justify-between items-center py-3 ">
+        <ul className="flex items-center space-x-6 list-none">
+          <li>
+            <Link href="/" passHref>
+              <a className="text-gray-600 hover:bg-indigo-100 hover:text-indigo-500  rounded p-2">
+                Home
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" passHref>
+              <a className="text-gray-600 hover:bg-indigo-100 hover:text-indigo-500  rounded p-2">
+                About
+              </a>
+            </Link>
+          </li>
+        </ul>
+        <button>
+          {theme === "light" ? (
+            <HiOutlineMoon
+              className="w-5 h-5"
+              onClick={() => setTheme("dark")}
+            />
+          ) : (
+            <HiOutlineSun
+              className="w-5 h-5"
+              onClick={() => setTheme("light")}
+            />
+          )}
+        </button>
       </div>
     </nav>
   );

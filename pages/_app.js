@@ -1,11 +1,16 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-import PageWrapper from '../components/PageWrapper'
+import PageWrapper from "../components/PageWrapper";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <PageWrapper><Component {...pageProps} /></PageWrapper>
-  )
+    <ThemeProvider attribute="class">
+      <PageWrapper>
+        <Component {...pageProps} />
+      </PageWrapper>
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
