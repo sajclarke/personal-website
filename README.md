@@ -5,7 +5,8 @@ This is my personal website built with [Next.js](https://nextjs.org/), [Tailwind
 Coming soon
 
 ## Roadmap
+
 - [x] Contentful integration
 - [x] Calendly Link
-- [ ] Newsletter
+- [x] Newsletter
 - [ ] Contact Form
