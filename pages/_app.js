@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import PageWrapper from "../components/PageWrapper";
 import { ThemeProvider } from "next-themes";
+import { DefaultSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   return (
