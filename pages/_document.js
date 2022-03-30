@@ -18,6 +18,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
             rel="stylesheet"
           />
+
+          <script
+            src="https://code.tidio.co/dlhq4e3cswf5n4kg8xeb7vkok05u6iqh.js"
+            async
+          ></script>
           {/* Tracking Codes */}
           <script
             async

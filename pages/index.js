@@ -1,10 +1,10 @@
-import { fetchEntries } from "@utils/contentfulPosts";
+// import { fetchEntries } from "@utils/contentfulPosts";
 import BlogPost from "@components/BlogPost";
 import Subscribe from "@components/Subscribe";
 
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
-export default function Home({ posts }) {
+export default function Home() {
   // console.log(posts)
 
   const projects = [
@@ -198,16 +198,16 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps() {
-  const res = await fetchEntries();
-  // console.log(res)
-  const posts = await res.map((p) => {
-    return { ...p.fields, id: p.sys.id };
-  });
+// export async function getStaticProps() {
+//   const res = await fetchEntries();
+//   // console.log(res)
+//   const posts = await res.map((p) => {
+//     return { ...p.fields, id: p.sys.id };
+//   });
 
-  return {
-    props: {
-      posts,
-    },
-  };
-}
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// }
